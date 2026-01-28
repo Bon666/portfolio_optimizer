@@ -1,29 +1,32 @@
-# Portfolio Optimizer
+# Portfolio Optimizer (Python)
 
-📈 A Python-based tool to optimize a portfolio of stocks by maximizing the Sharpe Ratio and minimizing risk using Monte Carlo simulation and numerical optimization.
+A portfolio optimization project using historical stock price data to construct:
+- Maximum Sharpe Ratio portfolio
+- Minimum Volatility portfolio
+- Efficient Frontier (Monte Carlo simulation)
 
-## ✅ Features
+This project demonstrates practical financial modeling, risk–return analysis, and portfolio construction using real-world market data.
 
-- Downloads historical price data from Yahoo Finance
-- Calculates annualized return and volatility
-- Simulates thousands of random portfolios
-- Visualizes risk-return space with Sharpe ratio coloring
-- Identifies optimal portfolios:
-  - Maximum Sharpe Ratio
-  - Minimum Volatility
+---
 
-## 💡 Stocks Used
+## Methods
+- Mean–Variance Optimization (Markowitz framework)
+- Monte Carlo simulation of random portfolios
+- Risk-adjusted return evaluation (Sharpe Ratio)
 
-- AAPL, MSFT, GOOGL, AMZN, META (modifiable)
+---
 
-## ▶️ How to Run
+## Tech Stack
+- Python
+- NumPy
+- pandas
+- yfinance
+- Matplotlib
 
+---
+
+## How to Run
+
+### 1. Install dependencies
 ```bash
 pip install -r requirements.txt
-python portfolio_optimizer.py
-```
-
-## 📂 Output
-
-- `graphs/monte_carlo_portfolios.png`: Risk-return scatter plot of portfolios
-- `stock_prices.csv`: Price data file
